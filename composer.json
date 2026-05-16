@@ -1,0 +1,46 @@
+{
+  "name": "fresh-advance/license-component",
+  "description": "Module license helper component",
+  "type": "oxideshop-component",
+  "minimum-stability": "dev",
+  "keywords": [
+    "oxid",
+    "license",
+    "module"
+  ],
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "Fresh Advance",
+      "email": "info@freshadvance.eu"
+    }
+  ],
+  "require": {
+  },
+  "require-dev": {
+    "oxid-esales/oxideshop-ce": "dev-b-7.4.x",
+    "oxid-esales/media-library-module": "dev-b-7.4.x",
+    "phpunit/phpunit": "^11",
+    "phpstan/phpstan": "^2.1",
+    "squizlabs/php_codesniffer": "4.*",
+    "phpmd/phpmd": "^2.11",
+    "oxid-esales/developer-tools": "dev-b-7.4.x"
+  },
+  "autoload": {
+    "psr-4": {
+      "FreshAdvance\\LicenseComponent\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "FreshAdvance\\LicenseComponent\\Tests\\": "tests/",
+      "OxidEsales\\EshopCommunity\\Tests\\": "./vendor/oxid-esales/oxideshop-ce/tests"
+    }
+  },
+  "config": {
+    "allow-plugins": {
+      "oxid-esales/oxideshop-composer-plugin": true,
+      "oxid-esales/oxideshop-unified-namespace-generator": true
+    }
+  }
+}
